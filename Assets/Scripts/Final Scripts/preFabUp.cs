@@ -10,7 +10,7 @@ public class preFabUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        a = Convert.ToSingle(Scroll.MAX_speed);
+        a = 1f;
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class preFabUp : MonoBehaviour
     {
         transform.position += new Vector3(-Scroll.horizontalSpeed*100, a*10, 0) * Time.deltaTime;
 
-        if (transform.position.y >= 9)
+       if (transform.position.y >= 9)
         {
             Destroy(gameObject);
         }
